@@ -1,7 +1,10 @@
 <template>
     <div class="news">
-        <!-- <back backTitle="我的消息"></back> -->
         <button @click="test">请求测试按钮</button>
+        <!-- 密码输入框 -->
+        <van-password-input :value="value" :focused="showKeyboard" @focus="showKeyboard = true" :gutter="20" :length="4" :errorInfo="errorInfo"/>
+        <!-- 数字键盘 -->
+        <van-number-keyboard v-model="value" :show="showKeyboard" @blur="showKeyboard = false" />
         <h1>Test router index Page</h1>
     </div>
 </template>
@@ -10,12 +13,12 @@
 <script setup>
 
 import { updatePassword } from "../http/user"
-
-// function test(){
-//     console.log(21111)
-// }
-const test = () =>{
-    console.log(11111)
+import { watch } from "vue";
+const value = ref("");
+const errorInfo = ref("")
+const showKeyboard = ref(true);
+const test = () => {
+    console.log(value)
     const param = {
         account: "test",
         password: "test",
@@ -29,6 +32,14 @@ const test = () =>{
         Toast.fail(error.response.data.message);
     });
 };
+watch(value, (newVal) => {
+    if (newVal.length > 4) {
+        value = value.toString().substr(0,4)
+        errorInfo.value = '只能为四位';
+    } else {
+        errorInfo.value = '';
+    }
+});
 </script>
     
     
@@ -38,7 +49,7 @@ const test = () =>{
     padding-bottom: 20px
 }
 
-.news button{
+.news button {
     width: 100px;
     height: 20px;
 }
