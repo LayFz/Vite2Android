@@ -1,6 +1,6 @@
 # Cross-Platform Development Template and Packaging Tutorial with Vite+Vue3
 
- [英文](readme-en.md) | [中文](readme.md)
+ [英文](readme-en.md) | [中文](README.md)
 
 ## Overview
 - Cross-platform development has numerous advantages, making it increasingly popular in modern application development.
