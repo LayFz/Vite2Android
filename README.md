@@ -264,4 +264,5 @@
 - [Vite | 下一代的前端工具链 (vitejs.dev)](https://cn.vitejs.dev/)
 - [Vue.js - 渐进式 JavaScript 框架 | Vue.js ](https://cn.vuejs.org/)
 - [UniApp -   https://uniapp.dcloud.net.cn/](https://cn.vuejs.org/)
+- [Vant 4 - 轻量、可定制的移动端 Vue 组件库.](https://vant-ui.github.io/vant/#/en-US)
 
