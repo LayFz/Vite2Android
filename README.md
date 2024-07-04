@@ -106,7 +106,7 @@
 
 - 在vue.config.js文件中要注意打包的相对路径，否则会出现路径不匹配的错误
 
-  ​	<img src=".\img\2.png" with="60%">
+  ​	<img src="https://gitee.com/LayFz/Vite2Android/raw/main/img/2.png" with="60%">
 
   <span id="care">在其defineConfig节点中声明,使其打包时不会产生相对路径错误的问题</span>
 
@@ -208,7 +208,7 @@
 
   以上代码的js部分详细的写出了配置安卓端退出的详细方法，以及一些路由守卫权限的相关存储，用户可根据自生需求进行取舍。其最后是否退出在安卓端的呈现方式如下所示，代码中会判断用户在一秒内是否重复的操作了相关的退出接口。
 
-  <img src="img/1.png" with="60%">
+  <img src="https://gitee.com/LayFz/Vite2Android/raw/main/img/1.png" with="60%">
 
   
 
@@ -218,11 +218,11 @@
 
   - 执行npm run build
 
-    - <img src="img/3.png" with="60%">
+    - <img src="https://gitee.com/LayFz/Vite2Android/raw/main/img/3.png" with="60%">
 
       此时可以得到打包好的dist目录
 
-    - <img src="img/4.png" with="60%">
+    - <img src="https://gitee.com/LayFz/Vite2Android/raw/main/img/4.png" with="60%">
 
       此时一定要核对项目所引用的文件是否符合相对路径的规则，如果导出文件不对应，会出现白屏的情况，请仔细核对[注意事项](#care)
 
@@ -230,32 +230,32 @@
 
   - 打开Huilder，新建一个h5+项目
 
-    <img src="img\6.png" with="60%">
+    <img src="https://gitee.com/LayFz/Vite2Android/raw/main/img/6.png" with="60%">
 
   - 此时的目录结构如下
 
-    <img src="img\8.png" with="60%">
+    <img src="https://gitee.com/LayFz/Vite2Android/raw/main/img/8.png" with="60%">
 
   - 我们需要删除所有的文件，除了mainifest.json
 
-    <img src="img\9.png" with="60%">
+    <img src="https://gitee.com/LayFz/Vite2Android/raw/main/img/9.png" with="60%">
 
-  - <img src="img\10.png" with="60%">
+  - <img src="https://gitee.com/LayFz/Vite2Android/raw/main/img/10.png" with="60%">
 
-  - <img src="img\11.png" with="60%">
+  - <img src="https://gitee.com/LayFz/Vite2Android/raw/main/img/11.png" with="60%">
 
 
 ​				以上包含了你的应用所需要的图标以及权限相关的配置，具体可以创建一个自行尝试。
 
 - 第三步
   - 将打包的dist文件内内的所有内容复制到h5+的主目录中，如下图所示。
-  - <img src="img\12.png" with="60%">
+  - <img src="https://gitee.com/LayFz/Vite2Android/raw/main/img/12.png" with="60%">
 - 第四步
   - 点击   发行-> 云打包
-  - <img src="img\13.png" with="60%">
-  - <img src="img\14.png" with="60%">
+  - <img src="https://gitee.com/LayFz/Vite2Android/raw/main/img/13.png" with="60%">
+  - <img src="https://gitee.com/LayFz/Vite2Android/raw/main/img/14.png" with="60%">
   - 如上图，根据你的需要，进行打包即可，过程可能需要几分钟，需要注意的是，在校验过程中最好是采用原生android生成的密钥，如果仅仅是测试，则不需要，一般情况下也可以使用android studio来进行原生环境的打包。
-  - <img src="img\15.png" with="60%">
+  - <img src="https://gitee.com/LayFz/Vite2Android/raw/main/img/15.png" with="60%">
   - 以上是等待打包后的最后效果，会产生unpackage目录下的apk路径如图所示，此时可以通过安卓系统安装测试。
 
 ## 参考资料
