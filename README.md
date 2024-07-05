@@ -1,4 +1,4 @@
-# 基于Vite+Vue3的跨平台开发模板及打包教程
+# 基于Vite+Vue3的跨平台开发能力
 
 [中文](readme.md)|[英文](readme-eng.md)
 
