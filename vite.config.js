@@ -18,18 +18,18 @@ export default defineConfig({
       imports: ['vue', 'vue-router'],
       dts: 'src/auto-import.d.ts',
     }),
-    styleImport({
-      resolves: [VantResolve()],
-      libs: [
-        {
-          libraryName: 'vant',
-          esModule: true,
-          resolveStyle: (name) => {
-            return `../es/${name}/style/index`
-          },
-        },
-      ],
-    }),
+    // styleImport({
+    //   resolves: [VantResolve()],
+    //   libs: [
+    //     {
+    //       libraryName: 'vant',
+    //       esModule: true,
+    //       resolveStyle: (name) => {
+    //         return `../es/${name}/style/index`
+    //       },
+    //     },
+    //   ],
+    // }),
   ],
   resolve: {
     alias: {
